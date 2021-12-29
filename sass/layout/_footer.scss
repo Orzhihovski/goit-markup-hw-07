@@ -44,10 +44,7 @@
   display: flex;
   align-items: baseline;
 }
-.footer-left {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
+
 .footer-right {
   margin-left: 70px;
 }
@@ -63,6 +60,8 @@
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--second-bg-color);
 }
 .adress-list {

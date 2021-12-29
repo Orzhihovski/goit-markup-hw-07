@@ -232,13 +232,13 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:checked + .chek-item {
+  &:checked + .checked {
     background-color: var(--accent-color);
 
     border: 2px transparent;
   }
 
-  &:focus + .chek-item {
+  &:focus + .checked {
     outline: 2px solid #2196f3;
   }
 }
