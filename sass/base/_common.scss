@@ -1,6 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--bacik-bg-color);
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .link {

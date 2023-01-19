@@ -1,34 +1,78 @@
 .backdrop {
   width: 100vw;
   height: 100vh;
+  
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
+  left: 0;
   transition: opacity 800ms, visibility 800ms;
+  overflow-y: scroll;
+
+  &.backdrop.is-hidden {
+      .modal {
+        transform: scale(2) rotate(90deg);
+        transition: transform 800ms;
+      }
 }
-.backdrop.is-hidden {
-  .modal {
-    transform: scale(2) rotate(90deg);
-    transition: transform 800ms;
-  }
 }
+
+
+
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  
   box-sizing: border-box;
-  background-color: var(--heder-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(1);
-  transform: translate(-50%, -50%);
+    background-color: var(--heder-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
 
-  transition: transform 800ms;
+  @media screen and (min-width: 480px) and (max-width:767px) {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      width: 450px;
+      max-height: 609px;
+
+      box-sizing: border-box;
+        background-color: var(--heder-bg-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 40px;
+    
+  }
+    @media screen and (min-width: 768px) {
+        width: 528px;
+        height: 609px;
+        box-sizing: border-box;
+        background-color: var(--heder-bg-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 40px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: scale(1);
+        transform: translate(-50%, -50%);
+  
+        transition: transform 800ms;
+    }
+
+@media screen and (min-width: 1200px) {
+  width: 528px;
+  height: 581px;
+
+    top: 50%;
+      left: 50%;
+      
+  
+}
+
 }
 
 .button-close {
@@ -175,18 +219,72 @@
 }
 
 .checked__agree {
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: var(--accent-color);
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+  
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
   text-decoration: underline;
-  margin-left: 5px;
+
+  @media screen and (min-width: 1200px) {
+
+    font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+    
+      letter-spacing: 0.03em;
+  }
+ 
+
+ 
+  
+margin-left: 5px;
+ 
+  
+
+
+}
+
+.agree-text {
+  display: flex;
+  align-items: center;
+  
+  @media screen and (max-width: 1199px) {
+    font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      /* identical to box height */
+    
+      letter-spacing: 0.03em;
+    
+      color: #757575;
+      align-items: center;
+    
+  }
 }
 
 .modal-field__policy {
+@media screen and (max-width: 1199px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+    
+
+  }
+
   font-size: 14px;
   line-height: 24px;
   /* identical to box height, or 171% */
@@ -195,21 +293,27 @@
 
   color: var(--main-text-color);
   display: flex;
+  align-items: center;
+  margin-top: 18px;
 }
+
+
 .policy-label {
   margin-top: 20px;
   margin-bottom: 30px;
 
   display: flex;
+  
 }
 
 .checked {
+  
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
   display: flex;
-  transform: translateY(15%);
+  transform: translateY(1%);
 
   margin-right: 7px;
 
