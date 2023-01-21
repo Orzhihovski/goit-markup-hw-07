@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -20,44 +20,85 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-container container">
-            <a class="logotype logotype--upper" href="">Web<span class="letter">Studio</span></a>
-            <nav class="header-navigation">
-                
-
-                <ul class="header-navigation-list">
-                    <li class="header-navigation-list__item"><a class="header-navigation-list__link" href="./index.html">Студия</a></li>
-                    <li class="header-navigation-list__item"><a class="header-navigation-list__link active" href="./portfolio.html">Портфолио</a></li>
-                    <li class="header-navigation-list__item"><a class="header-navigation-list__link" href="">Контакты</a></li>
-                </ul>
-            </nav>
-
-
-            <ul class="header-contact-list">
-                <li class="header-contact-list__item"><a class="header-contact-list__link" href="mailto:info@devstudio.com">
-                        <svg class="header-contact-list__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
+        <header class="header">
+            <div class="container head-container">
+                <nav class="header-navigation">
+                    <a class="logotype-upper" href="">Web<span class="letter">Studio</span></a>
+        
+                    <button type="button" class="menu-button " aria-expandet="false" aria-controls="menu-container"
+                        data-menu-button>
+                        <svg width="20" height="20" aria-label="perecl mob menu">
+                            <use class="icon-cross" href="./images/icons.svg#icon-clo"></use>
+                            <use class="icon-menu" href="./images/icons.svg#icon-men"></use>
+        
                         </svg>
-
-
-                        info@devstudio.com</a></li>
-
-
-
-                <li class="header-contact-list__item"><a class="header-contact-list__link" href="tel:+380961111111">
-
-                        <svg class="header-contact-list__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                        +380961111111</a>
-                </li>
-            </ul>
-
-
-
-        </div>
-    </header>
+                    </button>
+        
+                    <div class="menu-container" id="menu-container" data-menu>
+        
+                        <div class="navigation">
+                            <ul class="header-navigation-list">
+                                <li class="header-navigation-list__item"><a class="header-navigation-list__link active"
+                                        href="./index.html">Студия</a></li>
+                                <li class="header-navigation-list__item"><a class="header-navigation-list__link"
+                                        href="./portfolio.html">Портфолио</a></li>
+                                <li class="header-navigation-list__item"><a class="header-navigation-list__link"
+                                        href="">Контакты</a></li>
+                            </ul>
+                        </div>
+        
+        
+                        <div class="contacts">
+                            <ul class="header-contact-list">
+                                <li class="header-contact-list__item"><a class="header-contact-list__link-mail"
+                                        href="mailto:info@devstudio.com">
+                                        <svg class="header-contact-list__icon" width="16" height="12">
+                                            <use href="./images/icons.svg#icon-envelope"></use>
+                                        </svg>
+        
+        
+                                        info@devstudio.com</a></li>
+        
+        
+        
+                                <li class="header-contact-list__item"><a class="header-contact-list__link-tel"
+                                        href="tel:+380961111111">
+        
+                                        <svg class="header-contact-list__icon" width="10" height="16">
+                                            <use href="./images/icons.svg#icon-phone"></use>
+                                        </svg>
+                                        +380961111111</a>
+                                </li>
+                            </ul>
+        
+                        </div>
+                        <div class="social-cont">
+                            <ul class="socials">
+                                <li class="socials-item">
+                                    <a href="" class="social-link">Inctagram</a>
+                                </li>
+                                <span class="line"></span>
+                                <li class="socials-item">
+                                    <a href="" class="social-link">Twitter</a>
+                                </li>
+                                <span class="line"></span>
+                                <li class="socials-item">
+                                    <a href="" class="social-link">Facebook</a>
+                                </li>
+                                <span class="line"></span>
+                                <li class="socials-item">
+                                    <a href="" class="social-link">Linkedln</a>
+                                </li>
+        
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        
+        
+        
+            </div>
+        </header>
  <main> 
      <section class="section-menu">
         <div class="container">
@@ -405,4 +446,4 @@
 
 </body>
 
-</html>
+</html> 

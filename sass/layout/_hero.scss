@@ -2,8 +2,9 @@
   text-align: center;
   max-width: 100%;
   height: auto;
-  padding: 40px 60px;
-
+  
+padding-top: 40px;
+padding-bottom: 40px;
   background-color: var(--second-bg-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -33,8 +34,8 @@
   @media screen and (min-width: 480px) and (max-width: 767px) {
     padding-top: 118px;
     padding-bottom: 118px;
-    padding-right: 60px;
-    padding-left: 60px;
+    // padding-right: 60px;
+    // padding-left: 60px;
 
 background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)), url(../images/bg768.jpg);
@@ -51,8 +52,8 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
   @media screen and (min-width: 768px) {
     padding-top: 118px;
     padding-bottom: 118px;
-    padding-right: 204px;
-    padding-left: 204px;
+    // padding-right: 204px;
+    // padding-left: 204px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
 

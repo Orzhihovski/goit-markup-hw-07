@@ -241,6 +241,10 @@ margin-top: 30px;
   border-radius: 4px;
   margin-left: 12px;
   margin-top: 15px;
+
+  & {
+    cursor: pointer;
+  }
   @media screen and (min-width: 480px) {
     width: 200px;
       height: 50px;
@@ -275,6 +279,14 @@ margin-top: 30px;
 
   color: rgba(255, 255, 255, 0.6);
 margin-top: 10px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+    & {
+      cursor: pointer;
+    }
  
 
   @media screen and (min-width:480px) and (max-width: 767px) {
