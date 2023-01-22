@@ -522,7 +522,13 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .navigation {
+    margin-bottom: 150px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation {
     margin-bottom: 302px;
     text-align: left;
@@ -620,7 +626,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .menu-container {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     padding: 40px 10px 48px 40px;
     display: none;
     position: absolute;
