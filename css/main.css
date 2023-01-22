@@ -1405,7 +1405,7 @@ body.modal-open {
 
 .picture__overlay-text {
   position: absolute;
-  top: 0%;
+  top: 28px;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   padding-top: 63px;
@@ -1429,6 +1429,13 @@ body.modal-open {
 .picture__link:hover .picture__overlay-text, .picture__link:focus .picture__overlay-text {
   -webkit-transform: translatey(0%);
           transform: translatey(0%);
+}
+@media screen and (min-width: 768px) {
+  .picture__overlay-text {
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
 }
 
 .picture__photo {
