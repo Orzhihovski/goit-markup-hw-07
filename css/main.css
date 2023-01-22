@@ -1084,8 +1084,8 @@ body.modal-open {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
+  font-size: 16px;
+  line-height: 24px;
   /* or 162% */
   text-align: center;
   letter-spacing: 0.06em;
@@ -1136,11 +1136,6 @@ body.modal-open {
 }
 
 .hero__button {
-  display: inline-block;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1148,24 +1143,58 @@ body.modal-open {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.2;
   color: var(--main-title-color);
   background-color: var(--accent-color);
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
+  margin-top: 25px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0cm;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .hero__button {
   cursor: pointer;
   font-family: inherit;
+}
+@media screen and (min-width: 480px) {
+  .hero__button {
+    display: inline-block;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-title-color);
+    background-color: var(--accent-color);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0cm;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .section-menu {
